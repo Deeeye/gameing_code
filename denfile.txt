@@ -1,0 +1,432 @@
+language_1 = input("what is your language? ENGLISH or GERMAN ")
+if language_1 == "GERMAN":
+   # Start des Spiels
+  print("Willkommen zu meinem Spiel")
+  player_name = input("Wie ist dein Name? ")
+  frage = input("Bist du bereit zu spielen? JA oder NEIN: ").upper()
+  print(f"{player_name}, willkommen in der Realität des Lebens")
+
+  # Start des Spiels
+  if frage == "JA":
+    # Nach dem Alter des Spielers fragen
+    alter = int(input("Wie alt bist du? "))
+    
+    # Überprüfen, ob der Spieler zu jung ist
+    if alter <= 12:
+        print(f"{player_name}, du bist zu jung für dieses Spiel. Danke fürs Ausprobieren. SPIEL VORBEI")
+        
+    # Überprüfen, ob der Spieler im Altersbereich der Junioren liegt
+    elif 13 <= alter < 16:
+        # Nach der Richtung fragen
+        richtung_1 = input(f"{player_name}, du stehst kurz davor, in der Juniorenliga zu spielen. VIEL GLÜCK. Links oder Rechts: ").upper()
+        
+        if richtung_1 == "RECHTS":
+            # Pfad für die Auswahl von Kaffee
+            getränk = input("Was ist dein Lieblingsgetränk, Tee oder Kaffee? ").lower()
+            if getränk == "kaffee":
+                zucker_milch = input("Mit Zucker oder Milch? ").lower()
+                if zucker_milch == "milch":
+                    temperatur = input("Kalt oder heiß? ").lower()
+                    if temperatur == "kalt":
+                        transport = input("Was möchtest du als Belohnung, AUTO, FAHRRAD ODER LKW ").upper()
+                        if transport == "AUTO":
+                            car_model = input("Welche Art von Auto möchtest du? Wir haben einige Optionen für dich. BMW, VW und OPEL ")
+                            if car_model == "BMW":
+                                print("Hier ist der Schlüssel")
+                            elif car_model == "VW":
+                                print("Komm mit mir mit")
+                            elif car_model == "OPEL":
+                                print("Genieße deine Fahrt")
+                            else:
+                                print("Ungültige Option")
+                        elif transport == "FAHRRAD":
+                            car_model_1 = input("Welche Art von Fahrrad möchtest du? Wir haben einige Optionen für dich. BMX, MOUNTAIN und SPORTB ")
+                            if car_model_1 == "BMX":
+                                print("Hier ist der Schlüssel")
+                            elif car_model_1 == "MOUNTAIN":
+                                print("Komm mit mir mit")
+                            elif car_model_1 == "SPORTB":
+                                print("Dies ist der Beginn deiner Reise")
+                            else:
+                                print("Ungültige Option")
+                        elif transport == "LKW":
+                            truck_model = input("Welche Art von Lastwagen möchtest du? Wir haben einige Optionen für dich. CAGO, BIN und CONTAINER ")
+                            if truck_model == "CAGO":
+                                print("Hier ist der Schlüssel")
+                            elif truck_model == "BIN":
+                                print("Komm mit mir mit")
+                            elif truck_model == "CONTAINER":
+                                print("Genieße deine Fahrt")
+                            else:
+                                print("Ungültige Option")
+                        else:
+                            print("Ungültige Option")
+                        
+
+                    elif temperatur == "heiß":
+                        print("Versuche es beim nächsten Mal")
+                    else:
+                        print("Ungültige Option")
+                # Weitere Bedingungen für den Kaffeepfad
+                elif zucker_milch == "zucker":
+                    colore = input("Rot oder Weiß? ").lower()
+                    if colore == "rot":
+                         transport_3 = input("Probier diesen Wein, weil du Rot gewählt hast, hast du 2 Optionen. AUTO, FAHRRAD oder LKW ")
+                         if transport_3 == "GLAS":
+                            if transport_3 == "AUTO":
+                              model = input("Welche Art von Auto möchtest du? Wir haben einige Optionen für dich. BMW, VW und OPEL ")
+                              if model == "BMW":
+                                print("Hier ist der Schlüssel")
+                              elif model == "VW":
+                                print("Komm mit mir mit")
+                              elif model == "OPEL":
+                                print("Genieße deine Fahrt")
+                              else:
+                                print("Ungültige Option")
+                         elif transport_3 == "FAHRRAD":
+                              model_1 = input("Welche Art von Fahrrad möchtest du? Wir haben einige Optionen für dich. BMX, MOUNTAIN und SPORTB ")
+                              if model_1 == "BMX":
+                                print("Hier ist der Schlüssel")
+                              elif model_1 == "MOUNTAIN":
+                                print("Komm mit mir mit")
+                              elif model_1 == "SPORTB":
+                                print("Dies ist der Beginn deiner Reise")
+                              else:
+                                print("Ungültige Option")
+                         elif transport_3 == "LKW":
+                              truck_model = input("Welche Art von Lastwagen möchtest du? Wir haben einige Optionen für dich. CAGO, BIN und CONTAINER ")
+                              if truck_model == "CAGO":
+                                print("Hier ist der Schlüssel")
+                              elif truck_model == "BIN":
+                                print("Komm mit mir mit")
+                              elif truck_model == "CONTAINER":
+                                print("Genieße deine Fahrt")
+                              else:
+                                print("Ungültige Option")
+                         else:
+                            print("Ungültige Option")
+                    elif colore == "weiß":
+                        print("Das war eine großartige Option")
+                    else:
+                        print("Ungültige Option")
+                else:
+                    print("Ungültige Option")
+            # Pfad für die Auswahl von Tee
+            elif getränk == "tee":
+                bread = input("Brauchst du Marmelade oder Butter auf deinem Brot? M für Marmelade, B für Butter: ").upper()
+                if bread == "M":
+                     transport_3 = input("Welche Art von Auto, AUTO, LASTWAGEN oder FAHRRAD")
+                     if transport_3 == "AUTO":
+                        model = input("Welche Art von Auto möchtest du? Wir haben einige Optionen für dich. BMW, VW und OPEL ")
+                        if model == "BMW":
+                                print("Hier ist der Schlüssel")
+                        elif model == "VW":
+                                print("Komm mit mir mit")
+                        elif model == "OPEL":
+                                print("Genieße deine Fahrt")
+                        else:
+                                print("Ungültige Option")
+                     elif transport_3 == "FAHRRAD":
+                              model_1 = input("Welche Art von Fahrrad möchtest du? Wir haben einige Optionen für dich. BMX, MOUNTAIN und SPORTB ")
+                              if model_1 == "BMX":
+                                print("Hier ist der Schlüssel")
+                              elif model_1 == "MOUNTAIN":
+                                print("Komm mit mir mit")
+                              elif model_1 == "SPORTB":
+                                print("Dies ist der Beginn deiner Reise")
+                              else:
+                                print("Ungültige Option")
+                     elif transport_3 == "LASTWAGEN":
+                              truck_model = input("Welche Art von Lastwagen möchtest du? Wir haben einige Optionen für dich. CAGO, BIN und CONTAINER ")
+                              if truck_model == "CAGO":
+                                print("Hier ist der Schlüssel")
+                              elif truck_model == "BIN":
+                                print("Komm mit mir mit")
+                              elif truck_model == "CONTAINER":
+                                print("Genieße deine Fahrt")
+                              else:
+                                print("Ungültige Option")
+                     else:
+                            print("Ungültige Option")
+                elif bread == "B":
+                    print(f"Kein Problem {player_name}, du wirst es bald bekommen")
+                else:
+                    print("Ungültige Option")
+            else:
+                print("Ungültige Option")
+        # Pfad für die Auswahl der linken Richtung
+        elif richtung_1 == "LINKS":
+            letter = input("Du stehst kurz davor, die Frau des Königs zu treffen. Wähle einen Buchstaben A, B oder C: ").upper()
+            if letter == "A":
+                amina = input(f"Hallo, {player_name}, ich bin Amina, die Hausangestellte. Brauchst du HILFE oder möchtest du den Prinzen sehen? ").lower()
+                if amina == "hilfe":
+                    print(f"{player_name}, Du musst mich befreien.")
+                elif amina == "prinz":
+                    print(f"Du wurdest in die Seniorenliga versetzt. Herzlichen Glückwunsch!")
+                else:
+                    print("Ungültige Option")
+            else:
+                print("Ungültige Option")
+    # Überprüfen, ob der Spieler im Altersbereich der Senioren liegt
+    elif alter > 16 and alter < 30:
+        # Pfad der Seniorenliga
+        passwort_1 = input("Du stehst kurz davor, die königliche Wache zu sehen. Was ist dein Passwort? Wähle eine Zahl von 1 bis 3: ")
+        if passwort_1 == "1":
+            royal_family1 = input("Möchtest du den Prinzen oder die Prinzessin sehen? ").lower()
+            if royal_family1 == "prinz":
+                print("Warte draußen auf ihn")
+            elif royal_family1 == "prinzessin":
+                print("Warte draußen auf die Prinzessin")
+            else:
+                print("Ungültige Option")
+        elif passwort_1 == "2":
+            King_offer = input(f"{player_name}, du hast den König und die Königin getroffen. Was brauchst du von uns? Gold oder Diamant? ").lower()
+            if King_offer == "gold":
+                print("Du bist ein reicher Mann")
+            elif King_offer == "diamant":
+                print("Du bist ein weiser Mann")
+            else:
+                print("Ungültige Option")
+        elif passwort_1 == "3":
+            second_offer = input("Lass uns einen Plan machen. Wähle Gold oder Bargeld: ").lower()
+            if second_offer == "gold":
+                print("Du hast eine kluge Wahl getroffen")
+            elif second_offer == "bargeld":
+                print("Geld ist nicht alles")
+            else:
+                print("Ungültige Option")
+        else:
+            print("Ungültige Option")
+    else:
+        # Spieler liegt außerhalb beider Altersbereiche
+        richtung_2 = input(f"{player_name}, du wirst in der Seniorenliga spielen. VIEL GLÜCK. Wähle Links oder Rechts: ").upper()
+        if richtung_2 == "RECHTS":
+            passwort_3 = input("Du stehst kurz davor, die königliche Wache zu sehen. Was ist dein Passwort? Wähle eine Zahl von 1 bis 3: ")
+            # Hier kannst du Logik hinzufügen, um das Passwort zu überprüfen.
+        elif richtung_2 == "LINKS":
+            buchstabe = input("Du stehst kurz davor, die Frau des Königs zu treffen. Wähle einen Buchstaben A, B oder C: ").upper()
+            # Hier kannst du Logik basierend auf dem gewählten Buchstaben hinzufügen.
+        else:
+            print("Ungültige Richtung.")
+# Spieler hat entschieden, nicht zu spielen
+  elif frage == "NEIN":
+    print(f"{player_name}, danke fürs Spielen")
+# Ungültige Antwort
+  else:
+    print("Ungültige Antwort. Bitte gib JA oder NEIN ein.")
+elif language_1 == "ENGLISH": 
+  print("Welcome to my Game")
+  player_name = input("What is your name? ")
+  question = input("Are you ready to play? YES or NO: ").upper()
+  print(f"{player_name}, welcome to the reality of life") 
+
+# Start of the game
+  if question == "YES":
+    # Ask for player's age
+    age = int(input("What is your age? "))
+    
+    # Check if player is too young
+    if age <= 12:
+        print(f"{player_name}, you are too young for this game. Thanks for trying. GAME OVER")
+        
+    # Check if player is in the junior league age range
+    elif 13 <= age < 16:
+        # Prompt for direction
+        direction_1 = input(f"{player_name}, you are about to play the junior league. GOOD LUCK. Left or Right: ").upper()
+        
+        if direction_1 == "RIGHT":
+            # Path for choosing coffee
+            drink = input("What is your favorite drink, tea or coffee? ").lower()
+            if drink == "coffee":
+                sugar_milk = input("With sugar or milk? ").lower()
+                if sugar_milk == "milk":
+                    temperature = input("Cold or hot? ").lower()
+                    if temperature == "cold":
+                        transport = input("What do you want as a reward, CAR, BICYCLE OR TRUSK ").upper()
+                        if transport == "CAR":
+                            car_model = input("what type of car, we have some options for you. BMW, VW and OPEL ")
+                            if car_model == "BMW":
+                                print("Here is the key")
+                            elif car_model == "VW":
+                                print("take a ride with me")
+                            elif car_model == "OPEL":
+                                print("enjoy your ride")
+                            else:
+                                print("Invalid option")
+                        elif transport == "BICYCLE":
+                            car_model_1 = input("what type of car, we have some options for you. BMX, MOUNTAIN and SPORTB ")
+                            if car_model_1 == "BMX":
+                                print("Here is the key")
+                            elif car_model_1 == "MOUNTAIN":
+                                print("take a ride with me")
+                            elif car_model_1 == "SPORTB":
+                                print("this is the start of your journey")
+                            else:
+                                print("Invalid option")
+                        elif transport == "TRUCK":
+                            truck_model = input("what type of car, we have some options for you. CAGO, BIN and CONTAINER ")
+                            if truck_model == "CAGO":
+                                print("Here is the key")
+                            elif truck_model == "BIN":
+                                print("take a ride with me")
+                            elif truck_model == "CONTAINER":
+                                print("enjoy your ride")
+                            else:
+                                print("Invalid option")
+                        else:
+                            print("invalid option")
+                        
+
+                    elif temperature == "hot":
+                        print("Try again next time")
+                    else:
+                        print("Invalid option")
+                # More conditions for coffee path
+                elif sugar_milk == "sugar":
+                    colore = input("Red or white? ").lower()
+                    if colore == "red":
+                         transport_3 = input("Try this wine, because you have choosing red, you have 2 option. CAR , BICYCLE or TRUCK ")
+                         if transport_3 == "GLASS":
+                            if transport_3 == "CAR":
+                              model = input("what type of car, we have some options for you. BMW, VW and OPEL ")
+                            if model == "BMW":
+                                print("Here is the key")
+                            elif model == "VW":
+                                print("take a ride with me")
+                            elif model == "OPEL":
+                                print("enjoy your ride")
+                            else:
+                                print("Invalid option")
+                         elif transport_3 == "BICYCLE":
+                              model_1 = input("what type of car, we have some options for you. BMX, MOUNTAIN and SPORTB ")
+                              if model_1 == "BMX":
+                                print("Here is the key")
+                              elif model_1 == "MOUNTAIN":
+                                print("take a ride with me")
+                              elif model_1 == "SPORTB":
+                                print("this is the start of your journey")
+                              else:
+                                print("Invalid option")
+                         elif transport_3 == "TRUCK":
+                              truck_model = input("what type of car, we have some options for you. CAGO, BIN and CONTAINER ")
+                              if truck_model == "CAGO":
+                                print("Here is the key")
+                              elif truck_model == "BIN":
+                                print("take a ride with me")
+                              elif truck_model == "CONTAINER":
+                                print("enjoy your ride")
+                              else:
+                                print("Invalid option")
+                         else:
+                            print("invalid option")
+                    elif colore == "white":
+                        print("That was a great option")
+                    else:
+                        print("Invalid option")
+                else:
+                    print("Invalid option")
+            # Path for choosing tea
+            elif drink == "tea":
+                bread = input("Do you need jam or butter in your bread? J for jam, B for butter: ").upper()
+                if bread == "J":
+                     transport_3 = input("what type of car, CAR, TRUCK or BICYCLE")
+                     if transport_3 == "CAR":
+                        model = input("what type of car, we have some options for you. BMW, VW and OPEL ")
+                        if model == "BMW":
+                                print("Here is the key")
+                        elif model == "VW":
+                                print("take a ride with me")
+                        elif model == "OPEL":
+                                print("enjoy your ride")
+                        else:
+                                print("Invalid option")
+                     elif transport_3 == "BICYCLE":
+                              model_1 = input("what type of car, we have some options for you. BMX, MOUNTAIN and SPORTB ")
+                              if model_1 == "BMX":
+                                print("Here is the key")
+                              elif model_1 == "MOUNTAIN":
+                                print("take a ride with me")
+                              elif model_1 == "SPORTB":
+                                print("this is the start of your journey")
+                              else:
+                                print("Invalid option")
+                     elif transport_3 == "TRUCK":
+                              truck_model = input("what type of car, we have some options for you. CAGO, BIN and CONTAINER ")
+                              if truck_model == "CAGO":
+                                print("Here is the key")
+                              elif truck_model == "BIN":
+                                print("take a ride with me")
+                              elif truck_model == "CONTAINER":
+                                print("enjoy your ride")
+                              else:
+                                print("Invalid option")
+                     else:
+                            print("invalid option")
+                elif bread == "B":
+                    print(f"No problem {player_name}, you will get it soon")
+                else:
+                    print("Invalid option")
+            else:
+                print("Invalid option")
+        # Path for choosing left direction
+        elif direction_1 == "LEFT":
+            letter = input("You are about to meet with the King's wife. Choose one letter A, B, or C: ").upper()
+            if letter == "A":
+                amina = input(f"Hello, {player_name}, I am Amina the house help. Do you need HELP or do you want to see the Prince? ").lower()
+                if amina == "help":
+                    print(f"{player_name}, You need to free me.")
+                elif amina == "prince":
+                    print(f"You have been transferred to the senior league. Congratulations!")
+                else:
+                    print("Invalid option")
+            else:
+                print("Invalid option")
+    # Check if player is in the senior league age range
+    elif age > 16 and age < 30:
+        # Senior league path
+        password_1 = input("You are about to see the Kings Guard. What is your password? Choose one number from 1 to 3: ")
+        if password_1 == "1":
+            royal_family1 = input("Do you want to see the Prince or Princess? ").lower()
+            if royal_family1 == "prince":
+                print("Wait for him outside")
+            elif royal_family1 == "princess":
+                print("Wait for the princess outside")
+            else:
+                print("Invalid option")
+        elif password_1 == "2":
+            King_offer = input(f"{player_name}, you have met with the King and Queen. What do you need from us? Gold or Diamond? ").lower()
+            if King_offer == "gold":
+                print("You are a rich man")
+            elif King_offer == "diamond":
+                print("You are a wise man")
+            else:
+                print("Invalid option")
+        elif password_1 == "3":
+            second_offer = input("Let us make a plan. Choose Gold or cash: ").lower()
+            if second_offer == "gold":
+                print("You made a wise choice")
+            elif second_offer == "cash":
+                print("Money is not everything")
+            else:
+                print("Invalid option")
+        else:
+            print("Invalid option")
+    else:
+        # Player is outside both age ranges
+        direction_2 = input(f"{player_name}, you are going to play the senior league. GOOD LUCK. Choose Left or Right: ").upper()
+        if direction_2 == "RIGHT":
+            password_3 = input("You are about to see the Kings Guard. What is your password? Choose one number from 1 to 3: ")
+            # Here you can add logic to check the password.
+        elif direction_2 == "LEFT":
+            letter = input("You are about to meet with the King's wife. Choose one letter A, B, or C: ").upper()
+            # Here you can add logic based on the chosen letter.
+        else:
+            print("Invalid direction.")
+# Player chose not to play
+  elif question == "NO":
+    print(f"{player_name}, thanks for playing")
+# Invalid response
+  else:
+    print("Invalid response. Please enter YES or NO.")
+else:
+    print("Invalid Option")
